@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>BittuModx Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <div class="splash-content">
+            <h1 class="splash-logo">BittuModx</h1>
+            <div class="loader"></div>
+            <p class="splash-text">Premium Gaming</p>
+        </div>
+    </div>
+
+    <!-- Main Game UI -->
+    <div class="game-wrapper">
+        <header>
+            <h1 class="game-title">BittuModx</h1>
+            <div class="score-board">
+                <div class="player active" id="p1-info">
+                    <span class="label">PLAYER X</span>
+                    <span class="score" id="score-x">0</span>
+                </div>
+                <div class="player" id="p2-info">
+                    <span class="label">PLAYER O</span>
+                    <span class="score" id="score-o">0</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="status-container">
+            <p id="status-text">Player X's Turn</p>
+        </div>
+
+        <div id="game-board" class="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+
+        <div class="controls">
+            <button id="reset-btn" class="neon-btn">Restart Game</button>
+        </div>
+    </div>
+
+    <!-- Win Modal -->
+    <div id="result-modal" class="modal">
+        <div class="modal-content">
+            <h2 id="result-message">Player X Wins!</h2>
+            <button id="modal-reset-btn" class="neon-btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
